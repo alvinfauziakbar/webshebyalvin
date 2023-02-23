@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="images/favicon.png" alt="PT. Suropati Hidro Energi" class="navbar-brand-img">
+                <h3 class="navbar-brand-title">PT. Suropati Hidro Energi</h3>
+            </a>
+            <div class="navbar-collapse collapse show">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="profile.html" class="nav-link">Our Profile</a></li>
+                    <li class="nav-item"><a href="index.html#service" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="index.html#message" class="nav-link">Message Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="py-4">
+        <section>
+            <div class="container p-0">
+                <h1 class="px-4">Hi <span id="user_welcome">User</span>, Welcome To Website</h1>
+                <p class="px-4">Ini adalah website latihan pertama</p>
+                <div class="banner">
+                    <img src="images/banner-img.jpeg" class="banner-img" alt="welcome">
+                </div>
+            </div>
+        </section>
+        <section id="#service">
+            <div class="container">
+                <h1>Services</h1>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service">
+                            <img src="images/enginer-design.png" alt="engineering design" class="service-img">
+                            <h4 class="service-name">
+                                Engineering Design
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service">
+                            <img src="images/survey.png" alt="engineering design" class="service-img">
+                            <h4 class="service-name">
+                                Survei dan Investigasi
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service">
+                            <img src="images/risk.png" alt="engineering design" class="service-img">
+                            <h4 class="service-name">
+                                Risk Based Inspection
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service">
+                            <img src="images/enginer-design.png" alt="engineering design" class="service-img">
+                            <h4 class="service-name">
+                                Pipeline Construction
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service">
+                            <img src="images/kpbu.png" alt="engineering design" class="service-img">
+                            <h4 class="service-name">
+                                KPBU - Based Project Feasibility Study
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service">
+                            <img src="images/feasibility.png" alt="engineering design" class="service-img">
+                            <h4 class="service-name">
+                                Feasibility Studies
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service">
+                            <img src="images/case-study.png" alt="engineering design" class="service-img">
+                            <h4 class="service-name">
+                                Special Case Study
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service">
+                            <img src="images/water.png" alt="engineering design" class="service-img">
+                            <h4 class="service-name">
+                                Water Resource and Water Management Study
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="#message">
+            <div class="container">
+                <h1>Message Us</h1>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <form action="#" onsubmit="return submitForm()" id="message">
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-4">Nama</label>
+                                <div class="col-lg-8">
+                                    <input type="text" id="nama" name="nama" class="form-control" placeholder="Nama">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-4">Tanggal Lahir</label>
+                                <div class="col-lg-8">
+                                    <input type="date" id="tanggal_lahir" name="tanggal_lahir" class="form-control" placeholder="dd/mm/yyyt">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-4">Jenis Kelamin</label>
+                                <div class="col-lg-8 py-3">
+                                    <input type="radio" name="jk" id="jk_l" class="form-check" value="Laki-laki"> Laki-laki
+                                    <input type="radio" name="jk" id="jk_p" class="form-check" value="Perempuan"> Perempuan
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-lg-4">Pesan</label>
+                                <div class="col-lg-8 py-3">
+                                    <textarea name="pesan" id="pesan" rows="4" class="form-control" placeholder="Pesan..."></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn">Kirim</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <table class="table">
+                            <tr>
+                                <td width="150px"><strong>Current Time</strong></td>
+                                <td width="1">:&nbsp;</td>
+                                <td id="current_time">-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Nama</strong></td>
+                                <td width="1">:&nbsp;</td>
+                                <td id="nama_output">-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tanggal Lahir</strong></td>
+                                <td width="1">:&nbsp;</td>
+                                <td id="tanggal_lahir_output">-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Jenis Kelamin</strong></td>
+                                <td width="1">:&nbsp;</td>
+                                <td id="jk_output">-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pesan</strong></td>
+                                <td width="1">:&nbsp;</td>
+                                <td id="pesan_output">-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-darkblue text-white">
+        <div class="container">
+            <div class="footer">
+                Created By Alvin
+            </div>
+        </div>
+    </footer>
+    <script>
+        function submitForm() {
+            const forms = document.forms['message']
+
+            if (forms['nama'].value == '') {
+                alert('Nama harus diisi')
+                forms['nama'].focus()
+                return false
+            } else if (forms['tanggal_lahir'].value == '') {
+                alert('Tanggal Lahir harus diisi')
+                forms['tanggal_lahir'].focus()
+                return false
+            } else if (forms['jk'].value == '') {
+                alert('Jenis Kelamin harus dipilih')
+                return false
+            } else if (forms['pesan'].value == '') {
+                alert('Pesan harus diisi')
+                forms['pesan'].focus()
+                return false
+            }
+
+            const message = {
+                'nama' : forms['nama'].value,
+                'tanggal_lahir' : forms['tanggal_lahir'].value,
+                'jk' : forms['jk'].value,
+                'pesan' : forms['pesan'].value
+            }
+
+            console.log(message)
+
+            const current_time = document.querySelector("#current_time")
+            const nama_output = document.querySelector("#nama_output")
+            const tanggal_lahir_output = document.querySelector("#tanggal_lahir_output")
+            const jk_output = document.querySelector("#jk_output")
+            const pesan_output = document.querySelector("#pesan_output")
+            const user_welcome = document.querySelector("#user_welcome")
+
+            current_time.innerHTML = Date()
+            nama_output.innerHTML = message.nama
+            user_welcome.innerHTML = message.nama
+            tanggal_lahir_output.innerHTML = message.tanggal_lahir
+            jk_output.innerHTML = message.jk
+            pesan_output.innerHTML = message.pesan
+
+            return false
+        }
+    </script>
+</body>
+</html>

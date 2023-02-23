@@ -1,0 +1,39 @@
+.img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-lg {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.staff {
+    padding: 1rem;
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.staff-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.staff-name {
+    font-size: 1.25rem;
+    color: #006faa;
+    margin-bottom: .5rem;
+}
+
+.staff-position {
+    font-size: 1rem;
+    color: #092a49;
+    margin: 0;
+}
